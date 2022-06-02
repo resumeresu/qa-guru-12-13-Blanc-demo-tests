@@ -165,8 +165,8 @@ public class MainPage {
         return this;
     }
 
-    @Step("Type in an idea")
-    public MainPage typeInIdea() {
+    @Step("Type in some text")
+    public MainPage typeInSomeText() {
         $(".message-field__textarea").setValue("Test idea");
         return this;
     }

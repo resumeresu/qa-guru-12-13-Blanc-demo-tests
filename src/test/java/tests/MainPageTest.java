@@ -40,7 +40,7 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("Click 'create an account' button")
+    @DisplayName("Going to the submit form by clicking the 'create an account' button")
     void clickCreateAccount() {
         mainPage.clickCreateAccount()
                 .checkChatText()
@@ -49,7 +49,7 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    @DisplayName("Click 'create an account' button in the header")
+    @DisplayName("Going to the submit form by clicking the 'create an account' button in the header")
     void clickCreateAccountFromHeader() {
         mainPage.scrollToTariffInfo()
                 .checkCreateButtonIsShownInHeader()
@@ -79,10 +79,10 @@ public class MainPageTest extends BaseTest {
 
     @Test
     @Disabled("Disabled test example")
-    @DisplayName("Check 'send' button appears when typed in some text in the message form")
+    @DisplayName("Check 'send' button appears when typed in some text in the feedback form")
     void sendButtonAppearsWhenTypedInMessageText() {
         mainPage.scrollDownToFeatures()
-                .typeInIdea()
+                .typeInSomeText()
                 .checkSendButtonAppears();
     }
 
