@@ -26,7 +26,6 @@ public class BaseTest {
 
         Configuration.baseUrl = "https://blanc.ru";
         Configuration.browserSize = browserSize;
-        Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://" + login + ":" + password + "@" + remote;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
