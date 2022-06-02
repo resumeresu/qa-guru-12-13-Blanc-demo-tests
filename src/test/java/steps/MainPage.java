@@ -140,6 +140,7 @@ public class MainPage {
 
     @Step("Scroll down to to tariff-info")
     public MainPage scrollToTariffInfo() {
+        $(".main").$(".cta__animation").shouldBe(visible);
         $(".tariff-info__description").scrollIntoView(true);
         return this;
     }
