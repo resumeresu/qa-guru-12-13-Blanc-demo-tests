@@ -22,9 +22,11 @@ public class BaseTest {
         String login = config.login();
         String password = config.password();
         String remote = System.getProperty("remote", "selenoid.autotests.cloud/wd/hub");
+        String browser = System.getProperty("browser", "chrome");
         String browserSize = System.getProperty("browserSize", "1920x1080");
 
         Configuration.baseUrl = "https://blanc.ru";
+        Configuration.browser = browser;
         Configuration.browserSize = browserSize;
         Configuration.remote = "https://" + login + ":" + password + "@" + remote;
 
