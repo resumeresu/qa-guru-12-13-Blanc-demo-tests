@@ -4,8 +4,7 @@ import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byAttribute;
-import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
 import static constants.MainPageText.*;
 
@@ -158,5 +157,22 @@ public class MainPage {
     public MainPage clickCreateButtonHeader() {
         $(".header__nav").$(byText("Открыть счёт")).click();
         return this;
+    }
+
+    @Step("Scroll down to 'Тебе это пригодится'")
+    public MainPage scrollDownToFeatures() {
+        $(byText("Тебе это пригодится")).scrollIntoView(true);
+        return this;
+    }
+
+    @Step("Type in an idea")
+    public MainPage typeInIdea() {
+        $(".message-field__textarea").setValue("Test idea");
+        return this;
+    }
+
+    @Step("Check is 'send' button has appeared")
+    public void checkSendButtonAppears() {
+        $(byText("Отправить")).shouldBe(visible);
     }
 }

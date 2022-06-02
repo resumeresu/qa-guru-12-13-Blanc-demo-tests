@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import steps.MainPage;
@@ -74,6 +75,15 @@ public class MainPageTest extends BaseTest {
                 .checkTooltipIsVisible()
                 .clickOutsideTooltip()
                 .checkTooltipIsHidden();
+    }
+
+    @Test
+    @Disabled("Disabled test example")
+    @DisplayName("Check 'send' button appears when typed in some text in the message form")
+    void sendButtonAppearsWhenTypedInMessageText() {
+        mainPage.scrollDownToFeatures()
+                .typeInIdea()
+                .checkSendButtonAppears();
     }
 
 }
