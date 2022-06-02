@@ -138,9 +138,9 @@ public class MainPage {
                 .shouldHave(text("Отправить"));
     }
 
-    @Step("Scroll down to to tariffCalculator")
-    public MainPage scrollToTariffCalculator() {
-        $("#tariffCalculator").scrollIntoView(true);
+    @Step("Scroll down to to tariff-info")
+    public MainPage scrollToTariffInfo() {
+        $(".tariff-info__description").scrollIntoView(true);
         return this;
     }
 

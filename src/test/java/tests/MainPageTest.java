@@ -50,7 +50,7 @@ public class MainPageTest extends BaseTest {
     @Test
     @DisplayName("Click 'create an account' button in the header")
     void clickCreateAccountFromHeader() {
-        mainPage.scrollToTariffCalculator()
+        mainPage.scrollToTariffInfo()
                 .checkCreateButtonIsShownInHeader()
                 .clickCreateButtonHeader()
                 .checkChatText()
