@@ -18,6 +18,7 @@ public class MainPageTest extends BaseTest {
     @DisplayName("Check personal account tooltip content")
     void personalAccountTooltipTest() {
         mainPage.hoverOnPersonalAccountButton()
+                .checkTooltipIsVisible()
                 .checkTooltipText()
                 .checkQRIsDisplayed();
     }
@@ -41,8 +42,38 @@ public class MainPageTest extends BaseTest {
     @DisplayName("Click 'create an account' button")
     void clickCreateAccount() {
         mainPage.clickCreateAccount()
-                .checkChatText();
+                .checkChatText()
+                .checkPhoneNumberInputIsVisible()
+                .checkPhoneNumberInputIsFocused();
     }
 
+    @Test
+    @DisplayName("Click 'create an account' button in the header")
+    void clickCreateAccountFromHeader() {
+        mainPage.scrollToTariffCalculator()
+                .checkCreateButtonIsShownInHeader()
+                .clickCreateButtonHeader()
+                .checkChatText()
+                .checkPhoneNumberInputIsVisible()
+                .checkPhoneNumberInputIsFocused();
+    }
+
+    @Test
+    @DisplayName("Enter the phone number and check if 'submit' button appears")
+    void enterThePhoneNumber() {
+        mainPage.clickCreateAccount()
+                .enterPhoneNumber()
+                .checkSubmitButtonVisible()
+                .checkSubmitButtonHasText();
+    }
+
+    @Test
+    @DisplayName("Close personal account tooltip by clicking outside the tooltip (failed test example")
+    void closePersonalAccountTooltipByOutsideClick() {
+        mainPage.clickPersonalAccountButton()
+                .checkTooltipIsVisible()
+                .clickOutsideTooltip()
+                .checkTooltipIsHidden();
+    }
 
 }
