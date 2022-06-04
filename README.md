@@ -94,6 +94,6 @@ clean test
 По завершении тестов отправляется краткий отчёт в Telegram
 
 <p align="left">
-<img title="Video example" src="images/screenshots/tg-notification.png" width="600">
+<img title="Video example" src="images/screenshots/tg-notification.png" width="400">
 </p>
 
