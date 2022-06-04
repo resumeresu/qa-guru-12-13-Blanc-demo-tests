@@ -3,7 +3,7 @@
 1. [Стэк](#стэк)
 2. [Проверки](#проверки)
 3. [Запуск тестов](#запуск-тестов)
-4. [Сборка в Jenkins](№[Сборка-в-Jenkins](https://jenkins.autotests.cloud/job/012-onen0ne-13-Blanc-demo-tests/))
+4. [Сборка в Jenkins](#Сборка-в-Jenkins)
 5. [Allure отчёт](#allure-отчёт)
 6. [Видеопример прохождения теста](#видеопример-прохождения-теста)
 7. [Уведомления в Telegram](#уведомления-в-Telegram)
@@ -62,7 +62,8 @@ clean test
 -DbrowserSize=${BROWSER_SIZE}
 ```
 
-## [Сборка в Jenkins](https://jenkins.autotests.cloud/job/012-onen0ne-13-Blanc-demo-tests/)
+## Сборка в Jenkins
+[Ссылка на сборку](https://jenkins.autotests.cloud/job/012-onen0ne-13-Blanc-demo-tests/)
 
 <p align="left">
 <img title="Jenkins job overview" src="images/screenshots/jenkins-overview.png" width="1000">
@@ -93,6 +94,6 @@ clean test
 По завершении тестов отправляется краткий отчёт в Telegram
 
 <p align="left">
-<img title="Video example" src="images/screenshots/tg-notification.png" width="1000">
+<img title="Video example" src="images/screenshots/tg-notification.png" width="600">
 </p>
 
