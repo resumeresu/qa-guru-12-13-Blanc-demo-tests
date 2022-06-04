@@ -3,10 +3,10 @@
 1. [Стэк](#стэк)
 2. [Проверки](#проверки)
 3. [Запуск тестов](#запуск-тестов)
-4. [Сборка в Jenkins](#сборка-в-jenkins)
+4. [Сборка в Jenkins](№[Сборка-в-Jenkins](https://jenkins.autotests.cloud/job/012-onen0ne-13-Blanc-demo-tests/))
 5. [Allure отчёт](#allure-отчёт)
 6. [Видеопример прохождения теста](#видеопример-прохождения-теста)
-7. [Уведомления в Telegram](#уведомления-в-telegram)
+7. [Уведомления в Telegram](#уведомления-в-Telegram)
 
 ## Стэк
 
@@ -91,4 +91,8 @@ clean test
 ## Уведомления в Telegram
 
 По завершении тестов отправляется краткий отчёт в Telegram
+
+<p align="left">
+<img title="Video example" src="images/screenshots/tg-notification.png" width="1000">
+</p>
 
