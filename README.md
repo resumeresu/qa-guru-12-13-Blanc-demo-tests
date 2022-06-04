@@ -72,7 +72,7 @@ clean test
 </p>
 
 <p align="left">
-<img title="Allure detailed steps" src="images/screenshots/allure-steps.png" width="1000">
+<img title="Allure detailed steps" src="images/screenshots/allure-detailed.png" width="1000">
 </p>
 
 ## Видеопример прохождения теста
