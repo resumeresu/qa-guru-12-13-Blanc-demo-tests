@@ -1,6 +1,9 @@
 # Демо проект автоматизированного тестирования главной страницы [BLANC банк](https://blanc.ru/)
 ## Содержание
-
+1. [Стэк](#стэк)
+2. [Проверки](#проверки)
+3. [Запуск тестов](#запуск-тестов)
+4. [Сборка в Jenkins](#сборка-в-jenkins)
 
 ## Стэк
 
@@ -57,4 +60,8 @@ clean test
 ```
 
 ## [Сборка в Jenkins](https://jenkins.autotests.cloud/job/012-onen0ne-13-Blanc-demo-tests/)
+
+<p align="left">
+<img title="Jenkins job overview" src="images/screenshots/jenkins-overview.png" width="600">
+</p>
 
