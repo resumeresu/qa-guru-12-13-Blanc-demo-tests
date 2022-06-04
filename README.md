@@ -62,6 +62,25 @@ clean test
 ## [Сборка в Jenkins](https://jenkins.autotests.cloud/job/012-onen0ne-13-Blanc-demo-tests/)
 
 <p align="left">
-<img title="Jenkins job overview" src="images/screenshots/jenkins-overview.png" width="600">
+<img title="Jenkins job overview" src="images/screenshots/jenkins-overview.png" width="1000">
 </p>
 
+## Allure отчёт
+
+<p align="left">
+<img title="Allure report overview" src="images/screenshots/allure-suites.png" width="1000">
+</p>
+
+<p align="left">
+<img title="Allure detailed steps" src="images/screenshots/allure-steps.png" width="1000">
+</p>
+
+## Видеопример прохождения теста
+
+В отчёте к каждому тесту прикладывается видео с прохождением этого теста. Ниже пример прохождения одного из тестов.
+
+#### Enter the phone number and check if 'submit' button appears
+
+<p align="left">
+<img title="Video example" src="images/gif/example.gif" width="1000">
+</p>
