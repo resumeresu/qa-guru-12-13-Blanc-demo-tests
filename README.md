@@ -41,7 +41,7 @@
 ```
 gradle clean test
 ```
-#### Локальный запуск с парамтерами
+#### Локальный запуск с параметерами
 ```
 gradle clean test
 -Dremote=${REMOTE}
